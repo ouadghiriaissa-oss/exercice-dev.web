@@ -1,0 +1,106 @@
+<style>
+   
+.form {
+  --bg-light: #efefef;
+  --bg-dark: #707070;
+  --clr: #ffffff;
+  --clr-alpha: #9c9c9c60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form .input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--clr-alpha);
+  outline: 2px solid var(--bg-dark);
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+  outline: 2px solid var(--clr);
+  transform: scale(1.1,1);
+  transition: 1s;
+}
+
+.label {
+  align-self: flex-start;
+  color: var(--clr);
+  font-weight: 600;
+}
+
+.form .submit {
+  padding: 1rem 0.75rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius:  40px;;
+ background: linear-gradient(40deg, rgb(248, 245, 245), rgb(97, 5, 100), rgb(56, 18, 126));
+  color: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form .submit:hover {
+    background: linear-gradient(40deg, rgb(248, 245, 245), rgb(97, 5, 100), rgb(56, 18, 126));
+  color: black;
+  transform: scale(1.1,1);
+  transition: 1s;
+  
+}
+
+.span {
+  text-decoration: none;
+  color: rgb(87, 2, 44);
+}
+
+.span a {
+  color: rgb(255, 28, 198);
+}
+
+
+body{
+    background: linear-gradient(40deg, rgb(248, 245, 245), rgb(97, 5, 100), rgb(56, 18, 126));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+</style>
+<form class="form">
+  <span class="input-span">
+    <label for="email" class="label">Email</label>
+    <input type="email" name="email" id="email"
+  /></span>
+  <span class="input-span">
+    <label for="password" class="label">Password</label>
+    <input type="password" name="password" id="password"
+  /></span>
+  <span class="span"><a href="#">Forgot password?</a></span>
+  <input class="submit" type="submit" value="Log in" />
+  <span class="span">Don't have an account? <a href="#">Sign up</a></span>
+</form>
+
