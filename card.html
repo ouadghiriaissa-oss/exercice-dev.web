@@ -1,0 +1,35 @@
+<style>
+.container {
+  display: flex;
+  gap: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(55deg, rgb(245, 243, 243), rgb(77, 77, 77), rgb(31, 30, 30));
+}
+
+.card {
+  background-color: #e2dbdb;
+  height: 100px;
+  width: 100px;
+  flex: 1;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  flex: 2;
+  background-color: #b8b8b8;
+}
+</style>
+<div class="container">
+  <div class="card">1</div>
+  <div class="card">2</div>
+  <div class="card">3</div>
+  <div class="card">4</div>
+</div>
